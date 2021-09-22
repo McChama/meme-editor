@@ -7,7 +7,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+code { 
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  display: inline-flex;
+  justify-content: center;
+  
+}
+.meme{
+  position: relative;
+  display: flex;
+  
+}
+.meme img {
+  width: 100%;
+}
+.meme span{
+  width: 100%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 4vmin;
+  color: rgba(244,244,100,1);
+  text-shadow: 0 0 .2em rgba(0,0,0,.5);
+}
+.line-top{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line-bottom{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .meme span{
+    font-size: 6vmin;
+  }
+  .line-top{
+    top: 10%;
+    left: 50%;
+  }
+  .line-bottom{
+    bottom: 5%;
+    left: 50%;
+  }
 }
